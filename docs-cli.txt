@@ -1,0 +1,16 @@
+usage: launch.py [-h] [--config CONFIG] {init,check,up,down,status,logs} ...
+
+Forge � procesos de desarrollo bajo tu control
+
+positional arguments:
+  {init,check,up,down,status,logs}
+    init                Crear un archivo de configuraci�n vac�o
+    check               Revisar puertos y variables, sin iniciar procesos
+    up                  Iniciar y supervisar en primer plano
+    down                Solicitar el cierre del supervisor de este directorio
+    status              Estado del supervisor local
+    logs                Mostrar las �ltimas l�neas de un servicio
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG

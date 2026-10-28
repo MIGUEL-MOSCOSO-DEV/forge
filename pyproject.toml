@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forge-supervisor"
+version = "1.0.0"
+description = "A local development process supervisor with port checks, environment validation and service logs."
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Miguel Moscoso", email = "miguelmoscoso.devperu@gmail.com"}]
+dependencies = []
+
+[project.scripts]
+forge = "forge.cli:main"
+
+[project.urls]
+Repository = "https://github.com/MIGUEL-MOSCOSO-DEV/forge"
+Issues = "https://github.com/MIGUEL-MOSCOSO-DEV/forge/issues"
+
+[tool.setuptools.packages.find]
+include = ["forge*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
